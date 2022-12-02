@@ -76,7 +76,7 @@ namespace Day1.Test
         [Test]
         public void TestFirstSmallAssignment()
         {
-            var calorieLines = ReadFile.ReadLines("first-small.txt");
+            var calorieLines = ReadFile.ReadLines("test-small.txt");
             var elves = CalorieCounter.SplitByElf(calorieLines);
             var highestCalorieElf = CalorieCounter.FindHighestCalorieElf(elves);
             Assert.That(highestCalorieElf, Is.EqualTo(24000));
@@ -85,7 +85,7 @@ namespace Day1.Test
         [Test]
         public void TestFirstBigAssignment()
         {
-            var calorieLines = ReadFile.ReadLines("first-big.txt");
+            var calorieLines = ReadFile.ReadLines("test-big.txt");
             var elves = CalorieCounter.SplitByElf(calorieLines);
             var highestCalorieElf = CalorieCounter.FindHighestCalorieElf(elves);
             Console.WriteLine(highestCalorieElf);
@@ -94,7 +94,7 @@ namespace Day1.Test
         [Test]
         public void TestSecondSmallAssignment()
         {
-            var calorieLines = ReadFile.ReadLines("first-small.txt");
+            var calorieLines = ReadFile.ReadLines("test-small.txt");
             var elves = CalorieCounter.SplitByElf(calorieLines);
             var topThreeElves = CalorieCounter.FindTopThreeHighestCalorieElves(elves);
 
@@ -104,7 +104,7 @@ namespace Day1.Test
         [Test]
         public void TestSecondBigAssignment()
         {
-            var calorieLines = ReadFile.ReadLines("first-big.txt");
+            var calorieLines = ReadFile.ReadLines("test-big.txt");
             var elves = CalorieCounter.SplitByElf(calorieLines);
             var topThreeElves = CalorieCounter.FindTopThreeHighestCalorieElves(elves);
             Console.WriteLine(topThreeElves.Sum());
